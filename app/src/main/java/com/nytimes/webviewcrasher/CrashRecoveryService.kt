@@ -7,12 +7,7 @@ import android.content.Intent
 import android.os.Binder
 import android.os.IBinder
 import android.widget.Toast
-import java.util.*
 
-
-class CrashWatchEntry(val processId: Int, val restartIntent: Intent) {
-
-}
 
 class CrashRecoveryService : Service() {
 
