@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.ServiceConnection
 import android.graphics.Color
+import android.net.Uri
 import android.os.Binder
 import android.os.Build
 import android.os.Bundle
@@ -111,8 +112,10 @@ class MainActivity : AppCompatActivity() {
             ): Boolean {
                 println("Render process is gone")
                 return if (handled) {
+                    val urlHash = Uri.parse(child.webView.url).fragment
+                    val char = urlHash?.toCharArray()?.get(0)
                     removeWebView(child)
-                    addAWebView(handled)
+                    addAWebView(handled, char)
                     true
                 } else {
                     false

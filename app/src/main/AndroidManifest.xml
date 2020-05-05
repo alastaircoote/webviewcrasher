@@ -23,7 +23,7 @@
 
         <service
             android:name=".CrashRecoveryService"
-            android:process=":Ohkay"
+            android:process=":Recover"
             android:exported="false"/>
 
     </application>
