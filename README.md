@@ -6,7 +6,7 @@ A very basic proof of concept using the androidx.webkit helpers for Android Webv
 
 ## What does it do?
 
-It should work out of the box with Android Studio. Whenn you launch the app you'll see two buttons:
+It should work out of the box with Android Studio. When you launch the app you'll see two buttons:
 
 - add handled webview
 - add unhandled webview
