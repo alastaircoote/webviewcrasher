@@ -16,6 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service
+            android:name=".TestIntentService"
+            android:process=":Ohkay"
+            android:exported="false"/>
+
+        <service
+            android:name=".CrashRecoveryService"
+            android:process=":Ohkay"
+            android:exported="false"/>
+
     </application>
 
 </manifest>

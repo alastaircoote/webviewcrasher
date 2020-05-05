@@ -8,7 +8,7 @@
             android:layout_height="0dp"
             android:layout_width="match_parent"
             android:layout_weight="1"
-
+            android:layout_margin="5dp"
             />
         <Button
             android:id="@+id/hangButton"
@@ -16,12 +16,7 @@
             android:layout_height="wrap_content"
             android:text="HANG"
             />
-    <Button
-        android:id="@+id/crashButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CRASH"
-        />
+
     <Button
         android:id="@+id/destroyButton"
         android:layout_width="match_parent"

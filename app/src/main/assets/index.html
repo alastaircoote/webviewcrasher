@@ -2,13 +2,25 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #letter {
+            font-size: 80px;
+            text-align: center;
+        }
+
+    </style>
 </head>
 
 <body>
-<p>Proof that the webview is still running:</p>
+<div id='main'>
+    <div id='letter'></div>
+<p>Timer showing that the webview is still running:</p>
 <p id='time'></p>
+<div style="height: 4000px"></div>
+</div>
 <script>
 
+document.getElementById('letter').innerHTML = window.location.hash.substr(1);
 
                     setInterval(function() {
                     document.getElementById('time').innerHTML = Date.now();

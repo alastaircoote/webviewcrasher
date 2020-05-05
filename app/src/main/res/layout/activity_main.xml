@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/outerFrame"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -19,10 +20,17 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Load a new webview"
-            android:id="@+id/addButton"
+            android:text="Add handled webview"
+            android:id="@+id/addHandled"
             android:layout_weight="1"
             />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Add unhandled webview"
+                android:id="@+id/addUnhandled"
+                android:layout_weight="1"
+                />
 
         </LinearLayout>
         <FrameLayout
