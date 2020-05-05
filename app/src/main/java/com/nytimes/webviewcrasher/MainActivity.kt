@@ -28,13 +28,14 @@ import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
+    // This is our "state", just a list of letters
     var letters:MutableList<Char> = mutableListOf()
 
+    // The process monitor we'll attach to all of our webviews
     val processMonitor = WebViewProcessMonitor {
-        val intent = Intent(this.applicationContext, this::class.java)
-
-        intent.putExtra("APPLICATION_STATE", letters.toCharArray())
-        intent
+        Intent(this.applicationContext, this::class.java).also {
+            it.putExtra("APPLICATION_STATE", letters.toCharArray())
+        }
     }
 
 
